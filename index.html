@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>선글캣 애니메이션</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>선글캣 애니메이션</title>
+        <link rel="stylesheet" href="myCharacterAnimation.css" />
+    </head>
+    <body>
+        <div class="sungl-cat">
+            <div class="left-ear"></div>
+            <div class="right-ear"></div>
 
-    <!--css-->
-    <link rel="stylesheet" href="myCharacterAnimation.css" />
-  </head>
-  <body>
-    <div class="sungl-cat">
-      <div class="left-ear"></div>
-      <div class="right-ear"></div>
+            <div class="face">
+                <div class="sunglass"></div>
+                <div class="eye-left"></div>
+                <div class="eye-right"></div>
+                <div class="nose"></div>
+                <div class="lip-left"></div>
+                <div class="lip-right"></div>
+                <div class="mouse"></div>
+                <div class="whiskers left"></div>
+                <div class="whiskers left2"></div>
+                <div class="whiskers right"></div>
+                <div class="whiskers right2"></div>
+            </div>
+        </div>
 
-      <!-- 얼굴 -->
-      <div class="face">
-        <!-- 선글라스 -->
-        <div class="sunglass"></div>
-        <!-- 눈 -->
-        <div class="eye-left"></div>
-        <div class="eye-right"></div>
-        <!-- 코 -->
-        <div class="nose"></div>
-        <!-- 입술 -->
-        <div class="lip-left"></div>
-        <div class="lip-right"></div>
-        <!-- 입 -->
-        <div class="mouse"></div>
-        <!-- 수염 -->
-        <div class="whiskers left"></div>
-        <div class="whiskers left2"></div>
-        <div class="whiskers right"></div>
-        <div class="whiskers right2"></div>
-      </div>
-    </div>
-  </body>
+        <section>
+            <h1>1.5초 뒤 선글라스가 나타납니다</h1>
+            <h2>고양이의 눈을 보고 싶다면 마우스를 올려보세요!</h2>
+        </section>
+
+        <aside class="award_button">
+            <p>💛우수상💛</p>
+        </aside>
+
+        <aside class="award">
+            <img
+                src="./src/프론트엔드_부트캠프_상장_강지혜.jpeg"
+                alt="천하제일 애니메이션 캐릭터 대회 우수상 강지혜 상장 이미지"
+            />
+        </aside>
+    </body>
+    <script>
+        const aside = document.querySelector(".award_button");
+        const award = document.querySelector(".award");
+
+        aside.addEventListener("click", () => {
+            award.style.display =
+                award.style.display === "block" ? "none" : "block";
+        });
+    </script>
 </html>
