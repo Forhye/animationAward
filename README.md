@@ -1,6 +1,6 @@
 # 위니브 杯 애니메이션 대회
 
-![sunglecat](https://github.com/user-attachments/assets/7c1215bc-53c7-4efd-ba34-fd7c630900af)
+![sunglecat](https://github.com/user-attachments/assets/5e91e553-82dd-4aab-bed1-5b7bff14b812)
 
 <div align="center">
 Sungle CAT
